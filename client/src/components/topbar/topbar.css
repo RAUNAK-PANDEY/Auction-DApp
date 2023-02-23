@@ -1,0 +1,81 @@
+.topbar{
+    height: 65px;
+    width: 100%;
+    background-color: #f0f2f5;
+    /* position: fixed; */
+    top: 0;
+    z-index: 999;
+    font-family: sans-serif;
+}
+.topbarWrapper{
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+.homeLogo{
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: 25px;
+    color: #091c45;
+    display: none;
+    font-family: Roboto;
+}
+.homeLogo1{
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: 25px;
+    color: #091c45;
+    font-family: Roboto;
+}
+.topbarList{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    position: absolute;
+    right: 50px;
+    list-style-type: none;
+}
+.topbarList li{
+    margin: 25px;
+}
+.nav-link{
+    margin: 20px;
+    color: #091c45;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link:hover{
+    color: rgb(87, 87, 255) !important;
+}
+
+ 
+ 
+ 
+ nav{
+    background-color:white;
+ }
+  
+ @media only screen and (max-width: 650px) {
+    
+    .topbarProfile{
+        right: 20px;
+    }
+    .homeLogo{
+        font-size: 22px;
+        font-weight: 700;
+        margin-left: 10px;
+        display:flex;
+    }
+    .homeLogo1{
+        display: none;
+    }
+    .nav-link{
+        margin: 5px;
+    }
+    
+}
