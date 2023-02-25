@@ -10,6 +10,7 @@ import { ethers } from "ethers";
 import { PlaceBid } from "./pages/placeBid/PlaceBid";
 import { BidList } from "./pages/bidList/BidList";
 import { CloseAuction } from "./pages/closeAuction/CloseAuction";
+import {  AuctionList } from "./pages/auctionList/AuctionList";
 function App() {
   const [account, setAccount] = useState("");
   const [contract, setContract] = useState(null);
@@ -32,15 +33,17 @@ function App() {
         const signer = provider.getSigner();
         const address = await signer.getAddress();
         setAccount(address);
-        let contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
-        //0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
-        //0x5FbDB2315678afecb367f032d93F642f64180aa3
+        
+        //Enter your contract address here
+        let contractAddress =  "0x5FbDB2315678afecb367f032d93F642f64180aa3"
+         
         const contract = new ethers.Contract(
           contractAddress,
           Auction.abi,
           signer
         );
-        // console.log(contract);
+        console.log(contract);
+
         setContract(contract);
         setProvider(provider);
       } else {
@@ -80,16 +83,22 @@ function App() {
               }
             />
 
-            {/* <Route
+            <Route
               exact
               path="/bidlist"
-              element={<BidList account={account} provider={provider} contract={contract} />}
-            /> */}
+              element={<BidList contract={contract} account={account} provider={provider} />}
+            />
            
+           <Route
+              exact
+              path="/auctionlist"
+              element={<AuctionList contract={contract} account={account} provider={provider} />}
+            />
+
           <Route
               exact
               path="/closeauction"
-              element={<CloseAuction account={account} provider={provider} contract={contract} />}
+              element={<CloseAuction contract={contract} account={account} provider={provider}  />}
             />
           </Routes>
         </div>

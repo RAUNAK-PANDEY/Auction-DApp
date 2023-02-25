@@ -20,6 +20,7 @@ export const CreateAuction = ({contract, account, provider}) => {
         try {
             console.log(auction.description , parseFloat(auction.startTime),parseFloat(auction.endTime) , parseFloat(auction.minBidValue))
             const signer = contract.connect(provider.getSigner());
+            console.log(signer)
             signer.createAuction(auction.description , parseFloat(auction.startTime),parseFloat(auction.endTime) , parseFloat(auction.minBidValue));
             setIsFetching(false)
         }catch (e) {

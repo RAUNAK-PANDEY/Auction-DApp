@@ -1,4 +1,4 @@
-.bidContainer1 {
+.auctionContainer1 {
     width: 100%;
     background-color: #f0f2f5;
     display: flex;
@@ -7,20 +7,20 @@
     overflow-y: scroll;
 }
 
-.bidWrapper1 {
+.auctionWrapper1 {
     width: 80%;
     display: flex;
     flex-direction: column;
 }
 
-.bidRight1 {
+.auctionRight1 {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.bidBox1 {
+.auctionBox1 {
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
         border-radius: 10px;
 }
       
-.bidInput1 {
+.auctionInput1 {
     height: 40px;
     background: transparent;
     padding-left: 20px;
@@ -66,18 +66,18 @@
     outline: none;
     width: 100%;
 }
-.bidInput1:focus {
+.auctionInput1:focus {
     border: 1px solid blue;
 }
  
-.bidButton1{
+.auctionButton1{
     height: 40px;
     padding: 10px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
 }
-.bidButton1{
+.auctionButton1{
     align-items: center;
     background-color: #283290;
     font-size: 20px;
@@ -91,6 +91,6 @@
     border: none;
     cursor: pointer;
 }
-.bidButton1:disabled{
+.auctionButton1:disabled{
     cursor: not-allowed;
 }

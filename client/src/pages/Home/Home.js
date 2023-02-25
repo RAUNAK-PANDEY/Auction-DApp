@@ -25,6 +25,11 @@ export default function Home() {
     navigate("/bidlist");
   };
 
+  const auctionList = (e) => {
+    // e.preventDefault();
+    navigate("/auctionlist");
+  };
+
   const closeAuction = (e) => {
     // e.preventDefault();
     navigate("/closeauction");
@@ -94,7 +99,7 @@ export default function Home() {
        
       </CardContent>
       <CardActions>
-        <Button size="small">start</Button>
+        <Button size="small" onClick={auctionList}>start</Button>
       </CardActions>
     </React.Fragment>
   );
@@ -126,12 +131,12 @@ export default function Home() {
         <Grid item xs={2} sm={4} md={4}>
         <Card style={{margin : "20px"}}>{card5}</Card>
         </Grid>
-        {/* <Grid item xs={2} sm={4} md={4}>
+        <Grid item xs={2} sm={4} md={4}>
         <Card style={{margin : "20px"}}>{card3}</Card>
         </Grid>
         <Grid item xs={2} sm={4} md={4}>
         <Card style={{margin : "20px"}}>{card4}</Card>
-        </Grid> */}
+        </Grid>
         
         </Grid>
   
