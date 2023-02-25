@@ -1,13 +1,28 @@
-# Sample Hardhat Project
+# Auction DApp
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+## Technology Stack & Tools
+- [React.js](https://reactjs.org/) (Frontend Framework)
+- [Hardhat](https://hardhat.org/) (Development Framework)
+- [Ethers.js](https://docs.ethers.io/v5/) (Blockchain Interaction)
+- Solidity (Writing Smart Contracts & Tests)
+- Javascript (React & Testing)
 
-Try running some of the following tasks:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+## Requirements For Initial Setup
+- Install [NodeJS](https://nodejs.org/en/)
+
+## Setting Up
+### 1. Clone/Download the Repository
+
+### 2. Install Dependencies:
+`$ npm install`
+
+### 3. Start Hardhat node
+`$ npx hardhat node`
+
+### 4. Run deployment script
+In a separate terminal execute:
+`$ npx hardhat run ./scripts/deploy.js --network localhost`
+
+### 5. Start frontend
+`$ npm start`
