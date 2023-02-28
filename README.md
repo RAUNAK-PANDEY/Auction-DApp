@@ -17,6 +17,7 @@ benefits of blockchain technology to ensure fairness and trust in the auction pr
 its user-friendly interface and intuitive design, the application provides a seamless experience
 for buyers and sellers to participate in auctions.
 
+
 ## Technology Stack & Tools
 - [React.js](https://reactjs.org/) (Frontend Framework)
 - [Hardhat](https://hardhat.org/) (Development Framework)
